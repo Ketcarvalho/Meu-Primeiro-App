@@ -1,15 +1,19 @@
------BEGIN CERTIFICATE REQUEST-----
-MIICUzCCATsCAQAwDjEMMAoGA1UEAwwDUEVNMIIBIjANBgkqhkiG9w0BAQEFAAOC
-AQ8AMIIBCgKCAQEAs3i9d5pPqz9aJXxBt0L8S8xJr7yDNlgFLkK+xyt1HOdxEqw8
-65+k7Iq8LdoE8acttLXGhi+ohgeYpER4nioEvwijQ0enBlAt5D8gllS/xvVuG1fZ
-bFoD0fO79gsgRgzE+oQNZdJfjFtsWHNC81/NUh4VRitDjDAJV2Y+05Q2BynTKJsB
-f0sHgwGks5yrrJCSx8DRlKFgcUxTFxuSDbN2U0DKWiBlH3E7nB9pWIA4bt6jyrTD
-3mHXi/xewm0MOR09Z+CGEm1agGSnI6n10G5t1+fcCMYP/XlPXWpPmkFnRgAehOZ9
-YtBmDj69uluXW2Cb79puvgrseKHxhVzTC6e95wIDAQABoAAwDQYJKoZIhvcNAQEL
-BQADggEBAJyFNVSPwAtI9SE5koLZoshbBtNALJ15ihH8RvX9Gdxkv5H5Br7MFx94
-AZnepd5hxssTznynnabbV48+lRk+aYzL7LlWnJC6yMI8oLpwTMrKHzko94GhP1p0
-skieN3Hpy7Z6klXWozg1qm8LJSLpNlWAJruoHUhM5RCOiacUPNwxHQFUGj8XbtCJ
-DC4nATFCKUw37BvhzY7BOFYDkTLrgGq3kEhSHD/rc24DWedx6yl/l25EgI+zHZTg
-hF2VZSvPyEiwVEK3NKFF7y0h8pLBUq1ayayS2Ry/Xv7YY61Ij4t8lRHsKYGcgbg1
-dCy8A1RMxgivD7FgMo68tbFqPARQl1M=
------END CERTIFICATE REQUEST-----
+package com.example.meuprimeiroapp
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val botao = findViewById<Button>(R.id.btnClique)
+
+        botao.setOnClickListener {
+            Toast.makeText(this, "Olá, Keteline! 🚀", Toast.LENGTH_SHORT).show()
+        }
+    }
+}
